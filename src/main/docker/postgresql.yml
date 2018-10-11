@@ -1,0 +1,11 @@
+version: '2'
+services:
+    race-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/race/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=race
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
